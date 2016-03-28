@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+        <hibernate-mapping package="domain">
+
+    <!--
+    本文键负责管理对象和关系的映射
+    -->
+
+    <class name="domain.Student" table="Student">
+        <id name="studentNo" type="java.lang.String" column="studentNo" length="64">
+            <generator class="assigned"></generator><!--主键生产策略一共有７种-->
+        </id>
+        <property name="studentName" length="64" type="java.lang.String" column="studentName" not-null="false">
+        </property>
+        <property name="major" length="64" type="java.lang.String" column="major" not-null="false">
+        </property>
+    </class>
+
+        </hibernate-mapping>
