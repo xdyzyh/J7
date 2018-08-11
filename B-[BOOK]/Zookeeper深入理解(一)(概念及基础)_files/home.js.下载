@@ -1,0 +1,1 @@
+$(function(){$('.poptip').popup();$('#sidebar-toggler').on("click",function(){$('.sidebar').sidebar({overlay:false}).sidebar("toggle");});});
